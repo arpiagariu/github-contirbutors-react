@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-
+import $ from 'jquery';
+import _ from 'lodash';
 import {Contributor} from './contributor.js';
 import {ContributorList} from './contributorlist.js'
 

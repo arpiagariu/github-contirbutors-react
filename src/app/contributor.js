@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export class Contributor extends Component {
+export class Contributor extends React.Component {
   render() {
     return (
       <div className="col-sm-6 col-md-3">

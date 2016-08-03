@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
-
 import {Contributor} from './contributor.js';
+import React from 'react';
 
 
-export class ContributorList extends Component{
+export class ContributorList extends React.Component{
   render() {
     var contributorDataNodes = this.props.data.map(function(contributorData) {
       return (

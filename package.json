@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "lodash": "^3.10.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-router": "^2.4.0"
@@ -32,7 +35,6 @@
     "postcss-loader": "^0.8.0",
     "autoprefixer": "^6.2.2",
     "json-loader": "^0.5.4",
-    "lodash": "^3.10.1",
     "webpack-split-by-path": "^0.0.10",
     "extract-text-webpack-plugin": "^1.0.1",
     "webpack-dev-middleware": "^1.4.0",

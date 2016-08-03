@@ -4,7 +4,6 @@ var CommentBox = React.createClass({
   },
   componentWillMount: function() {
     var defer = new Array();
-    //var _this = this;
     var repocall =  $.ajax({
       url: this.props.url,
       dataType: 'json',
@@ -20,10 +19,7 @@ var CommentBox = React.createClass({
      }
      Promise.all(defer).then((results)=>{
        var res = results.filter(Boolean);
-       //console.log(res);
-       //var flatten = _.flattenDeep(res);
        var resUniq = _.uniqBy(_.flattenDeep(res),'login');
-       //console.log(resUniq);
        this.setState({data:resUniq});
      });
     });
@@ -34,7 +30,6 @@ var CommentBox = React.createClass({
       <div className="commentBox">
         <h1>Comments</h1>
         <CommentList data = {this.state.data} />
-
       </div>
     );
   }
@@ -42,7 +37,6 @@ var CommentBox = React.createClass({
 
 var CommentList = React.createClass({
   render: function() {
-    //console.log(this.props.data);
      var commentNodes = this.props.data.map(function(comment) {
       return (
         <Comment comment={comment} key={comment.id}></Comment>
@@ -55,7 +49,6 @@ var CommentList = React.createClass({
     );
   }
 });
-
 
 var Comment = React.createClass({
   render: function() {

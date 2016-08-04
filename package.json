@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "bootstrap-webpack": "0.0.5",
     "jquery": "^3.1.0",
     "lodash": "^3.10.1",
     "react": "^15.0.1",
